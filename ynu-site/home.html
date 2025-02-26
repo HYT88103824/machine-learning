@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ynu-wiki</title>
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <span>YNUWiKi</span>
+        <div id="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="menu">
+            <li><a href = "https://www.ynu.ac.jp/">横浜国立大学公式サイト</a></li>
+            <li><a href = "https://www.ynu.ac.jp/campus/schedule/year_2024.html">令和6年度学事歴</a></li>
+            <li><a href = "https://www.instagram.com/yokohama_national_university/">横浜国立大学インスタグラム</a></li>
+            <li><a href = "https://x.com/ynucoop?prefetchTimestamp=1726375655108">生協公式X</a></li>
+            <li><a href = "https://twitter.com/ynu_lib">付属図書館公式X</a></li>
+            <li><a href = "https://risyu.jmk.ynu.ac.jp/gakumu_portal/Public/Syllabus/">シラバス</a></li>
+        </ul>
+    </header>
+
+    <div class="bg"></div>
+
+  <div class="search">
+    <div class="content">
+        <div class="bar">
+        <input type="search" form="search" placeholder="キーワードで検索" size="64">
+        <form method="post" action="#" id="search"></form> 
+        <p><input type="submit" value="検索"></p>
+    </div>
+    <div class="condition-search">
+        <p>
+            <input type="checkbox" id = "lecture" aria-label="condition-search">授業</input>
+            <input type="checkbox" id = "research" aria-label="condition-search">研究</input>
+            <input type="checkbox" id = "facility" aria-label="condition-search">施設</input>
+            <input type="checkbox" id = "others" aria-label="condition-search">その他</input>
+            
+            <div id = "faculty">
+            <input type="checkbox" id = "all" aria-label="lecture">全学</input>
+            <input type="checkbox" id ="education" aria-label="lecture">教育学部</input>
+            <input type="checkbox" id = "economics" aria-label = "lecture">経済学部</input>
+            <input type="checkbox" id = "business" aria-label = "lecture">経営学部</input>
+            <input type="checkbox" id = "science" aria-label = "lecture">理工学部</input>
+            <input type="checkbox" id = "urban" aria-label = "lecture">都市科学部</input>
+            <br></br>
+            </div>
+        
+        <div id = "major">
+            
+            <div id = "education">
+                <input type="checkbox" aria-label="lecture">人間形成コース</input>
+                <input type="checkbox" aria-label="lecture">教科教育コース</input>
+                <input type="checkbox" aria-label="lecture">特別支援教育コース</input><br>
+                <input type="checkbox" aria-label="lecture">芸術文化コース</input>
+                <input type="checkbox" aria-label="lecture">社会文化コース</input>
+                <br></br>
+            </div>
+            
+            <div id = "economics">
+                <input type="checkbox" aria-label="lecture">経済学科</input>
+                <input type="checkbox" aria-label="lecture">DSEP</input>
+                <input type="checkbox" aria-label="lecture">LBEEP</input>
+                <br></br>
+            </div>
+
+            <div id = "business">
+                <input type="checkbox" aria-label="lecture">経営学科</input>
+                <input type="checkbox" aria-label="lecture">DSEP</input>
+                <br></br>
+            </div>
+            
+            <div id = "science">
+                <input type="checkbox" aria-label = "lecture">機械工学EP</input>
+                <input type="checkbox" aria-label = "lecture">材料工学EP</input>
+                <input type="checkbox" aria-label = "lecture">化学教育EP</input>
+                <input type="checkbox" aria-label = "lecture">化学応用EP</input><br>
+                <input type="checkbox" aria-label = "lecture">バイオ教育EP</input>
+                <input type="checkbox" aria-label = "lecture">建築EP</input>
+                <input type="checkbox" aria-label = "lecture">都市基盤EP</input><br>
+                <input type="checkbox" aria-label = "lecture">海洋空間のシステムデザインEP</input>
+                <input type="checkbox" aria-label = "lecture">地球生態学EP</input>
+                <input type="checkbox" aria-label = "lecture">数理科学EP</input><br>
+                <input type="checkbox" aria-label = "lecture">物理工学EP</input>
+                <input type="checkbox" aria-label = "lecture">電子情報システムEP</input>
+                <input type="checkbox" aria-label = "lecture">情報工学EP</input>
+                <br></br>
+            </div>
+            
+            <div id = "urban">
+                <input type="checkbox" aria-label="lecture">都市社会共生学科</input>
+                <input type="checkbox" aria-label="lecture">建築学科</input>
+                <input type="checkbox" aria-label="lecture">都市基盤学科</input><br>
+                <input type="checkbox" aria-label="lecture">環境リスク共生学科</input>
+                <br></br>
+            </div>
+        </div>
+        
+    </p>   
+    
+    <p><input type="submit" value="検索"></p>
+</div>
+
+<div class="post">
+    <p><button>レビューを投稿する</button></p>
+</div>
+
+
+</div>
+</div>
+
+<div>
+    
+</div>
+
+<script src="function.js"></script>
+</body>
+</html>
