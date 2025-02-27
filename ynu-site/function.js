@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       setTimeout(() => {
         // 次の画像へ
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = (currentIndex + 1) % images.length; //剰余にすることで反復（0に戻る）
         bgElement.style.backgroundImage = `url(${images[currentIndex]})`;
         
         // フェードイン
@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
         facultycheck.forEach(function(checkbox) {
           // 学部選択のidと一致する学科の詳細ブロックを取得
-          const detail = major.querySelector('div#' + checkbox.id);
+          const targetId = checkbox.dataset.target;
+          const detail = major.querySelector('div#' + targetId);
   
           if (detail) {
             // 初期設定では詳細ブロックは非表示

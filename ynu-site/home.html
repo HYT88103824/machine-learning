@@ -27,7 +27,7 @@
 
     <div class="bg"></div>
 
-  <div class="search">
+    <div class="search">
     <div class="content">
         <div class="bar">
         <input type="search" form="search" placeholder="キーワードで検索" size="64">
@@ -42,12 +42,12 @@
             <input type="checkbox" id = "others" aria-label="condition-search">その他</input>
             
             <div id = "faculty">
-            <input type="checkbox" id = "all" aria-label="lecture">全学</input>
-            <input type="checkbox" id ="education" aria-label="lecture">教育学部</input>
-            <input type="checkbox" id = "economics" aria-label = "lecture">経済学部</input>
-            <input type="checkbox" id = "business" aria-label = "lecture">経営学部</input>
-            <input type="checkbox" id = "science" aria-label = "lecture">理工学部</input>
-            <input type="checkbox" id = "urban" aria-label = "lecture">都市科学部</input>
+                <input type="checkbox" id="faculty-all" data-target="all" aria-label="lecture">全学</input>
+                <input type="checkbox" id="faculty-education" data-target="education" aria-label="lecture">教育学部</input>
+                <input type="checkbox" id="faculty-economics" data-target="economics" aria-label="lecture">経済学部</input>
+                <input type="checkbox" id="faculty-business" data-target="business" aria-label="lecture">経営学部</input>
+                <input type="checkbox" id="faculty-science" data-target="science" aria-label="lecture">理工学部</input>
+                <input type="checkbox" id="faculty-urban" data-target="urban" aria-label="lecture">都市科学部</input>
             <br></br>
             </div>
         
@@ -114,9 +114,6 @@
 </div>
 </div>
 
-<div>
-    
-</div>
 
 <script src="function.js"></script>
 </body>
