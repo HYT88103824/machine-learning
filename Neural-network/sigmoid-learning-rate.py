@@ -18,7 +18,7 @@ class NeuralNetwork:
         self.weights_input_hidden = np.random.randn(self.input_size, self.hidden_size) #(2,10)
         self.weights_hidden_output = np.random.randn(self.hidden_size, self.output_size) #(10,1)
 
-    def forward(self, x):
+    def forward(self, x): #順伝搬
         
         self.hidden_input = np.dot(x, self.weights_input_hidden) 
         self.hidden_output = sigmoid(self.hidden_input)
@@ -28,7 +28,7 @@ class NeuralNetwork:
         
         return self.output
     
-    def backward(self, x, y, output, learning_rate):
+    def backward(self, x, y, output, learning_rate): #逆伝搬
         output_error = y - output
         output_delta = output_error*sigmoid_derivative(output)
 
